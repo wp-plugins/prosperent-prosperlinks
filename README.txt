@@ -1,6 +1,6 @@
 === Prosperent ProsperLinks ===
 Contributors: Prosperent Brandon
-Tags: Prosperent, links, SEO, 
+Tags: Prosperent, links, SEO,
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: NA at this time
@@ -13,25 +13,25 @@ Allows a user to add Prosperent ProsperLinks to their WordPress page to deliver 
 
 *Prosperent Performance Ads*
 
-Adds ProsperLinks on a WordPress Page. This plugin places product links on the page that are relevant to the content. 
+Adds ProsperLinks on a WordPress Page. This plugin places product links on the page that are relevant to the content.
 
 *Why Prosperent ProsperLinks?*
 
-Prosperent's ProsperLinks advanced algorithm analyzes your content in realtime and delivers laser targeted, on topic product references. 
+Prosperent's ProsperLinks advanced algorithm analyzes your content in realtime and delivers laser targeted, on topic product references.
 
-We have an ever growing community, which is always willing to answer questions and lend a helping hand, and our team here at Prosperent is also available on the forum. 
+We have an ever growing community, which is always willing to answer questions and lend a helping hand, and our team here at Prosperent is also available on the forum.
 
 == Installation ==
 
-1.	First thing, head over to [Prosperent](http://goo.gl/6X8OT) and click Join, its Free to do so. Create your account and once you are signed in, stay on the Analytics tab. In the sub-tabs click the Referral Overview tab. At the bottom you will see your referral URL and at the end of that URL is a number, ('Your referral URL is: http://prosperent.com/ref/123456'), that number is your User ID. Save that somewhere as you'll be needing it soon.
+1.	First thing, head over to [Prosperent](http://goo.gl/6X8OT) and click Join, its Free to do so. Create your account and once you are signed in, look in the upper right hand corner. You should see "Welcome, -YOUR USERNAME- (123456)". The 6 digits after your user name in the parentheses in your User Id. You'll need that number later.
 2.	Upload the `prosperent-prosperLinks` folder to the `/wp-content/plugins/` directory.
 3.	Activate the plugin through the 'Plugins' menu in WordPress.
 4.	Go to the `ProsperLinks Settings`, these are the settings that ProsperLinks uses
-	a.) Add your `User ID` in the box marked User Id.
-	b.) SID (Optional, used for your own tracking purposes at Prosperent.
-	c.) Hoverbox (Set to true or false. This allows a product data flyover box to be present when a user hovers over a ProsperLink if set to true.)
-	d.) Underline (Set to 1 for a single underline, 2 for a double underline of the link.)
-	e.) Limit (Sets the limit for the maximum number of links to be displayed on a page. Max is 10.)
+    a.) Add your `User ID` in the box marked User Id.
+    b.) SID (Optional, used for your own tracking purposes at Prosperent.
+    c.) Hoverbox (Set to true or false. This allows a product data flyover box to be present when a user hovers over a ProsperLink if set to true.)
+    d.) Underline (Set to 1 for a single underline, 2 for a double underline of the link.)
+    e.) Limit (Sets the limit for the maximum number of links to be displayed on a page. Max is 10.)
 8.	Congratulations, you now have Prosperent ProsperLinks on your WordPress site.
 9.	Log in to Prosperent.com every so often to check your stats.
 
@@ -76,6 +76,6 @@ The commission rates vary from merchant to merchant, but we are always negotiati
 
 == Notes ==
 
-This plugin embeds external product links on your site. 
+This plugin embeds external product links on your site.
 
 If you have any questions or suggestions, please feel free to ask me here or on the [Prosperent Community](http://community.prosperent.com/forum.php), or email me Prosperent Brandon at brandon@prosperent.com
