@@ -2,7 +2,7 @@
 Contributors: Prosperent Brandon
 Tags: Prosperent, links, SEO,
 Requires at least: 3.0
-Tested up to: 3.3.1
+Tested up to: 3.4.2
 Stable tag: NA at this time
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -29,7 +29,7 @@ We have an ever growing community, which is always willing to answer questions a
 4.	Go to the `ProsperLinks Settings`, these are the settings that ProsperLinks uses
     a.) Add your `User ID` in the box marked User Id.
     b.) SID (Optional, used for your own tracking purposes at Prosperent.
-    c.) Hoverbox (Set to true or false. This allows a product data flyover box to be present when a user hovers over a ProsperLink if set to true.)
+    c.) Hoverbox (Enable or Disable. This allows a product data flyover box to be present when a user hovers over a ProsperLink if enabled.)
     d.) Underline (Set to 1 for a single underline, 2 for a double underline of the link.)
     e.) Limit (Sets the limit for the maximum number of links to be displayed on a page. Max is 10.)
 8.	Congratulations, you now have Prosperent ProsperLinks on your WordPress site.
@@ -70,6 +70,9 @@ We take a 30% commission and pay you the other 70%. If you are a larger publishe
 The commission rates vary from merchant to merchant, but we are always negotiating the highest rates in the industry. We pay out net30 like most networks. The only exception is when a merchant that we work with extends a commission based on their return policy. Our reporting interface reflects this and allows you to see the status of each commission. It's the same as what you would experience with any of the other affiliate networks like commission junction.
 
 == Changelog ==
+
+= 1.1 =
+* Updated admin options.
 
 = 1.0 =
 * First Release
