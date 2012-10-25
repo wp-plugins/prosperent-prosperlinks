@@ -2,7 +2,7 @@
 /*
 Plugin Name: Prosperent ProsperLinks
 Description: Plugin designed to add a Prosperent ProsperLinks to WordPress.
-Version: 1.0
+Version: 1.1
 Author: Prosperent Brandon
 License: GPL2
 */
@@ -47,11 +47,11 @@ function prosper_create_link_menu()
 function register_prosperLinkSettings()
 {
        //register our settings
-	register_setting('prosperLinks-settings-group', 'UID', 'intval');
-	register_setting('prosperLinks-settings-group', 'SID');
-	register_setting('prosperLinks-settings-group', 'hoverBox');
-	register_setting('prosperLinks-settings-group', 'underline', 'intval');
-	register_setting('prosperLinks-settings-group', 'linkLimit', 'intval');
+    register_setting('prosperLinks-settings-group', 'UID', 'intval');
+    register_setting('prosperLinks-settings-group', 'SID');
+    register_setting('prosperLinks-settings-group', 'hoverBox');
+    register_setting('prosperLinks-settings-group', 'underline', 'intval');
+    register_setting('prosperLinks-settings-group', 'linkLimit', 'intval');
 }
 
 function prosperLinks_settings_page()
@@ -65,30 +65,33 @@ function prosperLinks_settings_page()
             <?php do_settings_sections('prosperLinks-settings-group'); ?>
             <table class="form-table">
                 <tr valign="top">
-		      <th scope="row"><b>User ID</b> (Enter your User ID)</th>
-		      <td><input type="text" name="UID" value="<?php echo get_option('UID'); ?>" /></td>
-                </tr>
-				
-                <tr valign="top">
-		      <th scope="row"><b>SID</b> (Optional. Used for commission tracking)</th>
-		      <td><input type="text" name="SID" value="<?php echo get_option('SID'); ?>" /></td>
-                </tr>
-				
-		  <tr valign="top">
-		      <th scope="row"><b>Hoverbox</b> (Set to TRUE or FALSE. Defaults to FALSE.)</th>
-	             <td><input type="text" name="hoverBox" value="<?php echo get_option('hoverBox'); ?>" /></td>
-                </tr>
-				
-		  <tr valign="top">
-		      <th scope="row"><b>Underline</b> (Set to 1 for a single underline, 2 for a double underline. Defaults to 1.)</th>
-	  	      <td><input type="text" name="underline" value="<?php echo get_option('underline'); ?>" /></td>
+                    <th scope="row"><b>User ID</b> (Enter your User ID)</th>
+                    <td><input type="text" name="UID" value="<?php echo get_option('UID'); ?>" /></td>
                 </tr>
 
                 <tr valign="top">
-		      <th scope="row"><b>Limit</b> (Maximum number of links to be displayed on a page. Defaults to 5. Max is 10.)</th>
-		      <td><input type="text" name="linkLimit" value="<?php echo get_option('linkLimit'); ?>" /></td>
+                    <th scope="row"><b>SID</b> (Optional. Used for commission tracking)</th>
+                    <td><input type="text" name="SID" value="<?php echo get_option('SID'); ?>" /></td>
                 </tr>
-	     </table>
+
+                <tr valign="top">
+                    <th scope="row"><b>Hoverbox</b> (Enable or Disable the HoverBox)</th>
+                    <td>
+                        <input type="radio" name="hoverBox" value="1" <?php checked('1', get_option('hoverBox')); ?>> Enable<br>
+                        <input type="radio" name="hoverBox" value="0" <?php checked('0', get_option('hoverBox')); ?>> Disable
+                    </td>
+                </tr>
+
+                <tr valign="top">
+                    <th scope="row"><b>Underline</b> (Set to 1 for a single underline, 2 for a double underline. Defaults to 1.)</th>
+                    <td><input type="text" name="underline" value="<?php echo get_option('underline'); ?>" /></td>
+                </tr>
+
+                <tr valign="top">
+                    <th scope="row"><b>Limit</b> (Maximum number of links to be displayed on a page. Defaults to 5. Max is 10.)</th>
+                    <td><input type="text" name="linkLimit" value="<?php echo get_option('linkLimit'); ?>" /></td>
+                </tr>
+            </table>
             <p class="submit">
             <input type="submit" class="button-primary" value="<?php _e('Save Changes') ?>" />
             </p>
@@ -100,30 +103,22 @@ function prosperLinks_settings_page()
 
 function prosperLinks()
 {
-    if (strtolower(get_option('hoverBox')) == 'true') 
-    {
-        $hover = 1;
-    }
-    else 
-    {
-        $hover = 0;
-    }
     ?>
-    
+
     <script type="text/javascript">
         <!--
-	     var UID = <?php echo json_encode(get_option('UID')); ?>;
-	     var SID = <?php echo json_encode(get_option('SID')); ?>;
-	     var hoverBox = <?php echo json_encode($hover); ?>;
-	     var underline = <?php echo json_encode(get_option('underline')); ?>;
-            var limit = <?php echo json_encode(get_option('linkLimit')); ?>;
+         var UID = <?php echo json_encode(get_option('UID')); ?>;
+         var SID = <?php echo json_encode(get_option('SID')); ?>;
+         var hoverBox = <?php echo json_encode(get_option('hoverBox')); ?>;
+         var underline = <?php echo json_encode(get_option('underline')); ?>;
+         var limit = <?php echo json_encode(get_option('linkLimit')); ?>;
 
-	     prosperent_pl_uid = UID;
-	     prosperent_pl_sid = SID;
-	     prosperent_pl_hoverBox = hoverBox;
-	     prosperent_pl_underline = underline;
-	     prosperent_pl_limit = limit;
-	//-->
+         prosperent_pl_uid = UID;
+         prosperent_pl_sid = SID;
+         prosperent_pl_hoverBox = hoverBox;
+         prosperent_pl_underline = underline;
+         prosperent_pl_limit = limit;
+    //-->
     </script>
     <script type="text/javascript" src="http://prosperent.com/js/plink.min.js"></script>
     <?php
