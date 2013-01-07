@@ -11,6 +11,10 @@ Allows a user to add Prosperent ProsperLinks to their WordPress page to deliver 
 
 == Description ==
 
+**[Prosperent Suite](http://wordpress.org/extend/plugins/prosperent-suite/)** *The newest Prosperent Plugin, includes all other Prosperent plugins in one.*
+
+* Please use the Prosperent Suite in place of your ProsperLinks.
+
 *Prosperent Performance Ads*
 
 Adds ProsperLinks on a WordPress Page. This plugin places product links on the page that are relevant to the content.
