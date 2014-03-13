@@ -1,8 +1,8 @@
 <?php
 /*
 Plugin Name: Prosperent ProsperLinks
-Description: Plugin designed to add a Prosperent ProsperLinks to WordPress.
-Version: 1.1
+Description: This Plugin is not being update any longer. Please download the new Prosperent plugin instead- <a href="http://wordpress.org/extend/plugins/prosperent-suite/">Prosperent Suite</a>
+Version: 1.2
 Author: Prosperent Brandon
 License: GPL2
 */
@@ -25,6 +25,15 @@ License: GPL2
 
 add_action('wp_enqueue_scripts', 'prosperLinks_css');
 add_action('admin_menu', 'prosper_create_link_menu');
+add_action( 'admin_notices', 'prosperNoticeWrite' );
+
+function prosperNoticeWrite() 
+{
+	echo '<div class="error" style="padding:6px 0;">';
+	echo _e( '<span style="font-size:14px; padding-left:10px;"><b>The Prosperent ProsperLinks plugin is not being update any longer.<b></span><span style="font-size:12px;"></span><br><br>', 'my-text-domain' );
+	echo _e( '<span style="font-size:14px; padding-left:10px;">Please download the new Prosperent plugin instead- <a href="http://wordpress.org/extend/plugins/prosperent-suite/">Prosperent Suite</a></span><span style="font-size:12px;"></span>', 'my-text-domain' );
+	echo '</div>';	
+}
 
 function prosperLinks_css() {
     global $wp_styles;

@@ -3,17 +3,21 @@ Contributors: Prosperent Brandon
 Tags: Prosperent, links, SEO,
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: NA at this time
+Stable tag: 1.2
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Allows a user to add Prosperent ProsperLinks to their WordPress page to deliver highly relevant product links.
+This plugin is no longer being updated, please download the Prosperent Suite instead, listed below.
 
 == Description ==
 
-**[Prosperent Suite](http://wordpress.org/extend/plugins/prosperent-suite/)** *The newest Prosperent Plugin, includes all other Prosperent plugins in one.*
+**[Prosperent Suite](http://wordpress.org/extend/plugins/prosperent-suite/)** 
+**The newest Prosperent Plugin, includes all other Prosperent plugins in one.**
 
-* Please use the Prosperent Suite in place of your ProsperLinks.
+* **Please use the Prosperent Suite in place of your ProsperLinks.** 
+* **This plugin is no longer being updated.**
+* **The Prosperent Suite contains the newest version of ProsperLinks and other tools.**
+
 
 *Prosperent Performance Ads*
 
