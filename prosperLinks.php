@@ -30,7 +30,7 @@ add_action( 'admin_notices', 'prosperProspLinksNoticeWrite' );
 function prosperProspLinksNoticeWrite() 
 {
 	echo '<div class="error" style="padding:6px 0;">';
-	echo _e( '<span style="font-size:14px; padding-left:10px;"><b>The Prosperent ProsperLinks plugin is not being update any longer.<b></span><span style="font-size:12px;"></span><br><br>', 'my-text-domain' );
+	echo _e( '<span style="font-size:14px; padding-left:10px;"><b>The Prosperent ProsperLinks plugin is no longer being updated.<b></span><span style="font-size:12px;"></span><br><br>', 'my-text-domain' );
 	echo _e( '<span style="font-size:14px; padding-left:10px;">Please download the new Prosperent plugin instead- <a href="http://wordpress.org/extend/plugins/prosperent-suite/">Prosperent Suite</a></span><span style="font-size:12px;"></span><br><br>', 'my-text-domain' );
 	echo _e( '<span style="font-size:14px; padding-left:10px;">It contains the Prosperent ProsperLinks plus more great tools.</span><span style="font-size:12px;"></span>', 'my-text-domain' );
 	echo '</div>';	
