@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Prosperent ProsperLinks
-Description: This Plugin is not being update any longer. Please download the new Prosperent plugin instead- <a href="http://wordpress.org/extend/plugins/prosperent-suite/">Prosperent Suite</a>
+Description: This Plugin is no longer being updated. Please download the new Prosperent plugin instead- <a href="http://wordpress.org/extend/plugins/prosperent-suite/">Prosperent Suite</a>
 Version: 1.2
 Author: Prosperent Brandon
 License: GPL2
