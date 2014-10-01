@@ -1,83 +1,78 @@
-=== Prosperent ProsperLinks ===
+=== ProsperLinks ===
 Contributors: Prosperent Brandon
-Tags: Prosperent, links, SEO,
+Tags: Prosperent, affiliate, links, Prosperent.com, monetize, make money, affiliate marketing, wordpress seo, seo wordpress, search engine optimization, advertising, earn money, easy, revenue
 Requires at least: 3.0
-Tested up to: 3.4.2
-Stable tag: 1.2
-License: GPLv2
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tested up to: 4.0
+Stable tag: 1.3
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-This plugin is no longer being updated, please download the Prosperent Suite instead, listed below.
+Contains a link-optimizer and link-affiliator to easily monetize links already in your blog.
 
 == Description ==
 
-**[Prosperent Suite](http://wordpress.org/extend/plugins/prosperent-suite/)** 
-**The newest Prosperent Plugin, includes all other Prosperent plugins in one.**
+This plugin contains the following Prosperent tools:
 
-* **Please use the Prosperent Suite in place of your ProsperLinks.** 
-* **This plugin is no longer being updated.**
-* **The Prosperent Suite contains the newest version of ProsperLinks and other tools.**
+Link Optimizer- Takes a merchant URL and tries to find a higher converting/ higher paying merchant to send the click to.
+Link Affiliator- Detects URLs for the merchants we work with, and on click turns those links into affiliate URLs.
 
+To view a tutorials and a demo of the Prosperent Suite, visit [Prosperent Demo](http://wordpress.prosperentdemo.com/)
 
-*Prosperent Performance Ads*
+= Why choose Prosperent? =
 
-Adds ProsperLinks on a WordPress Page. This plugin places product links on the page that are relevant to the content.
+Well these reasons should help you with that question:
 
-*Why Prosperent ProsperLinks?*
+* **We are here for you-** We are always around to answer questions, office guidance and make sure you have everything you need to make a living online.
+* **Traffic optimization-** Our algorithm's are always making sure every click you send us goes to the HIGHEST PAYING and HIGHEST CONVERTING merchant at that moment.
+* **Size-** Because of our high volume, we work with the best Merchants and negotiate the highest commissions out there. Yes, we take a percentage of each commission (30% by default) instead of charging you a monthly fee, but because of our size, we more than make up for that with higher commission rates.
+* **Automatic access to top merchants-** Once you sign up with us (for Free), you have access to all 4,500 merchants that we work with.
+* **Clean data-** We clean the data feeds and resize images while serving it all from our global Content Delivery Network which means the images on your site load lightning fast at all times
+* **Big data-** We have mountains of conversion data. We know which merchants are converting, the brands that are hot, and the products that sell at various times throughout the year. We crunch all of this data and give you access to it all.
+* **Limitless and fast!-** We handle over 1.6 billion requests per month with no signs of slowing down. Fire off a request to our api, search tens of millions of products, and get back results within a few milliseconds.
+* **Join for free-** All of our competitors charge you a monthly fee to access their data and tools. We don't! Plain and simple, if you don't make money, we don't make money.
 
-Prosperent's ProsperLinks advanced algorithm analyzes your content in realtime and delivers laser targeted, on topic product references.
-
-We have an ever growing community, which is always willing to answer questions and lend a helping hand, and our team here at Prosperent is also available on the forum.
+== Screenshots ==
 
 == Installation ==
 
-1.	First thing, head over to [Prosperent](http://goo.gl/6X8OT) and click Join, its Free to do so. Create your account and once you are signed in, look in the upper right hand corner. You should see "Welcome, -YOUR USERNAME- (123456)". The 6 digits after your user name in the parentheses in your User Id. You'll need that number later.
-2.	Upload the `prosperent-prosperLinks` folder to the `/wp-content/plugins/` directory.
-3.	Activate the plugin through the 'Plugins' menu in WordPress.
-4.	Go to the `ProsperLinks Settings`, these are the settings that ProsperLinks uses
-    a.) Add your `User ID` in the box marked User Id.
-    b.) SID (Optional, used for your own tracking purposes at Prosperent.
-    c.) Hoverbox (Enable or Disable. This allows a product data flyover box to be present when a user hovers over a ProsperLink if enabled.)
-    d.) Underline (Set to 1 for a single underline, 2 for a double underline of the link.)
-    e.) Limit (Sets the limit for the maximum number of links to be displayed on a page. Max is 10.)
-8.	Congratulations, you now have Prosperent ProsperLinks on your WordPress site.
-9.	Log in to Prosperent.com every so often to check your stats.
+Follow the tutorials at [Prosperent Demo](http://wordpress.prosperentdemo.com/)
+
+1.	Upload the `prosperent-prosperlinks` folder to the `/wp-content/plugins/` directory.
+2.	Activate the plugin through the 'Plugins' menu in WordPress.
+3.	Once activated you should be on the ProsperLinks General Settings page, if not go there by clicking ProsperAds on the admin sidebar.
+4.  Head over to [Prosperent](http://goo.gl/VYDzii) and click Join Free. 
+5.  Go to [WordPress: ProsperLinks](http://prosperent.com/account/wordpress) and Create a New Installation or choose an API Key if you currently have one.
+6.  Enter that API Key into the Prosperent API Key text box and save the settings.
+7.  Now go to Link Settings and you can control the Link Affiliator and Link Optimizer.
+
+*Congratulations*, you now have access to ProsperLinks on your WordPress blog.
+Log in to **Prosperent.com** every so often to check your stats.
 
 == Frequently Asked Questions ==
 
-= What is Prosperent? =
-
-Prosperent is a company that is serious about getting you the tools that simplify your life as an affiliate marketer. We manage relationships with merchants, clean datafeeds, and provide a variety of publisher tools to get products on your site quickly and easily.
-
-= How many merchants does Prosperent work with? =
-
-Currently over 2,000 and growing.
-
-= How many products does Prosperent have? =
-
-We currently index and search against almost 50 million products.
-
-= Where can publishers go to get help? =
-
-Our Community Forums are a fantastic resource. Our entire team is active on a daily basis, and we are always here to lend a helping hand no matter what the question may be.
-
-= How do I get paid? =
-
-Prosperent pays publishers net30 which means we pay you 30 days after commission event takes place. This gives merchants time to see if a product is returned, or otherwise needs to be delayed for whatever reason.
-
-= How can we track our earnings? =
-
-We have a comprehensive reporting system in place that allows you to see which pages are generating earnings, which city/state/country the sales are coming from, and which individual products and retailers are providing those sales.
-
-= What is the revenue split? =
-
-We take a 30% commission and pay you the other 70%. If you are a larger publisher this split changes to 80/20.
-
-= What are the comissions paid and terms? =
-
-The commission rates vary from merchant to merchant, but we are always negotiating the highest rates in the industry. We pay out net30 like most networks. The only exception is when a merchant that we work with extends a commission based on their return policy. Our reporting interface reflects this and allows you to see the status of each commission. It's the same as what you would experience with any of the other affiliate networks like commission junction.
+1. **What is Prosperent?**
+    * Prosperent is a company that is serious about getting you the tools that simplify your life as an affiliate marketer. We manage relationships with merchants, clean datafeeds, and provide a variety of publisher tools to get products on your site quickly and easily.
+2. **How many merchants does Prosperent work with?**
+    * Currently over 4,500 and growing.
+3. **How many products does Prosperent have?**
+    * We currently index and search against almost 50 million products.
+4. **Where can publishers go to get help?**
+    * Our Community Forums are a fantastic resource. Our entire team is active on a daily basis, and we are always here to lend a helping hand no matter what the question may be.
+5. **How do I get paid?**
+    * Prosperent pays publishers net30 which means we pay you 30 days after commission event takes place. This gives merchants time to see if a product is returned, or otherwise needs to be delayed for whatever reason.
+6. **How can we track our earnings?**
+    * We have a comprehensive reporting system in place that allows you to see which pages are generating earnings, which city/state/country the sales are coming from, and which individual products and retailers are providing those sales.
+7. **What is the revenue split?**
+    * We take a 30% commission and pay you the other 70%. If you are a larger publisher this split changes to 80/20.
+8. **What are the commissions paid and terms?**
+    * The commission rates vary from merchant to merchant, but we are always negotiating the highest rates in the industry. We pay out net30 like most networks. The only exception is when a merchant that we work with extends a commission based on their return policy. Our reporting interface reflects this and allows you to see the status of each commission. It's the same as what you would experience with any of the other affiliate networks like commission junction.
 
 == Changelog ==
+
+= 1.3 =
+* Updated ProsperLinks
+* Easy to control
+* Runs Link Optimizer and Link Affiliator
 
 = 1.1 =
 * Updated admin options.
@@ -87,6 +82,4 @@ The commission rates vary from merchant to merchant, but we are always negotiati
 
 == Notes ==
 
-This plugin embeds external product links on your site.
-
-If you have any questions or suggestions, please feel free to ask me here or on the [Prosperent Community](http://community.prosperent.com/forum.php), or email me Prosperent Brandon at brandon@prosperent.com
+If you have any questions or suggestions, please feel free to ask me here, on the [Prosperent Community](http://community.prosperent.com/forum.php) or email me Prosperent Brandon at brandon@prosperent.com.
