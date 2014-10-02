@@ -7,7 +7,7 @@ Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Contains aut-linker, link-optimizer and link-affiliator to easily monetize links already in your blog.
+Contains auto-linker, link-optimizer and link-affiliator to easily monetize links already in your blog.
 
 == Description ==
 
