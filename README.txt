@@ -3,16 +3,17 @@ Contributors: Prosperent Brandon
 Tags: Prosperent, affiliate, links, Prosperent.com, monetize, make money, affiliate marketing, wordpress seo, seo wordpress, search engine optimization, advertising, earn money, easy, revenue
 Requires at least: 3.0
 Tested up to: 4.0
-Stable tag: 1.3
+Stable tag: 1.4
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Contains a link-optimizer and link-affiliator to easily monetize links already in your blog.
+Contains aut-linker, link-optimizer and link-affiliator to easily monetize links already in your blog.
 
 == Description ==
 
 This plugin contains the following Prosperent tools:
 
+Auto-Linker- Easily link words using the Auto-Linker shortcode or Auto Link in Content to send product links to merchants.
 Link Optimizer- Takes a merchant URL and tries to find a higher converting/ higher paying merchant to send the click to.
 Link Affiliator- Detects URLs for the merchants we work with, and on click turns those links into affiliate URLs.
 
@@ -44,6 +45,8 @@ Follow the tutorials at [Prosperent Demo](http://wordpress.prosperentdemo.com/)
 5.  Go to [WordPress: ProsperLinks](http://prosperent.com/account/wordpress) and Create a New Installation or choose an API Key if you currently have one.
 6.  Enter that API Key into the Prosperent API Key text box and save the settings.
 7.  Now go to Link Settings and you can control the Link Affiliator and Link Optimizer.
+8.  Go to Auto-Linker settings to set words to be matched automatically or...
+9.  Use the short code to wrap specific words to be linked.
 
 *Congratulations*, you now have access to ProsperLinks on your WordPress blog.
 Log in to **Prosperent.com** every so often to check your stats.
@@ -68,6 +71,10 @@ Log in to **Prosperent.com** every so often to check your stats.
     * The commission rates vary from merchant to merchant, but we are always negotiating the highest rates in the industry. We pay out net30 like most networks. The only exception is when a merchant that we work with extends a commission based on their return policy. Our reporting interface reflects this and allows you to see the status of each commission. It's the same as what you would experience with any of the other affiliate networks like commission junction.
 
 == Changelog ==
+
+= 1.4 =
+* Added Auto-Linker to ProsperLinks
+* Added short code button to editors
 
 = 1.3 =
 * Updated ProsperLinks

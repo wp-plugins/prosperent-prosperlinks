@@ -36,6 +36,7 @@ class ProsperLinksAdminController
 	public function registerSettingsPage() 
 	{
 		add_menu_page(__('ProsperLinks Settings', 'prosperent-suite'), __( 'ProsperLinks', 'prosperent-suite' ), 'manage_options', 'prosperlinks_general', array( $this, 'generalPage' ), PROSPERLINKS_IMG . '/prosperentWhite.png' );
+		add_submenu_page('prosperlinks_general', __( 'AutoLinker', 'prosperent-suite' ), __( 'Auto-Linker', 'prosperent-suite' ), 'manage_options', 'prosperlinks_autoLinker', array( $this, 'linkerPage' ) );
 		add_submenu_page('prosperlinks_general', __( 'ProsperLinks', 'prosperent-suite' ), __( 'Link Settings', 'prosperent-suite' ), 'manage_options', 'prosper_prosperLinks', array( $this, 'linksPage' ) );
 		add_submenu_page('prosperlinks_general', __( 'Advanced Options', 'prosperent-suite' ), __( 'Advanced', 'prosperent-suite' ), 'manage_options', 'prosperlinks_advanced', array( $this, 'advancedPage' ));
 		
@@ -71,6 +72,15 @@ class ProsperLinksAdminController
 	}
 		
 	/**
+	 * Loads the form for the auto-linker page.
+	 */
+	public function linkerPage() 
+	{
+		if ( isset( $_GET['page'] ) && 'prosperlinks_autoLinker' == $_GET['page'] )
+			require_once( PROSPERLINKS_VIEW . '/prosperadmin/linker-phtml.php' );
+	}			
+		
+	/**
 	 * Loads the form for the prosperLinks page.
 	 */
 	public function linksPage() 
@@ -85,7 +95,7 @@ class ProsperLinksAdminController
 	public function advancedPage() 
 	{	
 		if ( isset( $_GET['page'] ) && 'prosperlinks_advanced' == $_GET['page'] )
-			require_once( PROSPERINSERT_VIEW . '/prosperadmin/advanced-phtml.php' );
+			require_once( PROSPERLINKS_VIEW . '/prosperadmin/advanced-phtml.php' );
 	}		
 }
  

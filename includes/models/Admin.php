@@ -15,12 +15,62 @@ class Model_Links_Admin extends Model_Links_Base
 	/**
 	 * @var array $adminPages Array of admin pages that the plugin uses.
 	 */
-	public $adminPages = array('prosper_general', 'prosper_prosperLinks', 'prosper_advanced');
+	public $adminPages = array('prosper_general', 'prosper_autoLinker', 'prosper_prosperLinks', 'prosper_advanced');
 		
 	public function init()
 	{
-
+		if ( isset( $_GET['add'] ) && wp_verify_nonce( $_GET['nonce'], 'prosper_add_setting' ) && current_user_can( 'manage_options' ) ) 
+		{ 
+			$this->addLinks();
+			wp_redirect( admin_url( 'admin.php?page=prosperlinks_autoLinker&settings-updated=true' ) );
+		}	
+		
+		if ( isset( $_GET['delete'] ) && wp_verify_nonce( $_GET['nonce'], 'prosper_delete_setting' ) && current_user_can( 'manage_options' ) ) 
+		{
+			$this->deleteLinks($_GET['delete']);
+			wp_redirect( admin_url( 'admin.php?page=prosperlinks_autoLinker' ) );
+		}	
     }	
+	
+	public function addLinks()
+	{
+		$options = get_option('prosper_autoLinker');
+
+		$options['LinkAmount'] = intval($options['LinkAmount']) + 1;
+		update_option('prosper_autoLinker', $options);
+
+		$options['LTM'][$options['LinkAmount'] - 1] = true;
+
+		update_option('prosper_autoLinker', $options);
+	}	
+	
+	public function deleteLinks($optNum) 
+	{	
+		$options = get_option('prosper_autoLinker');
+		$intLinks = intval($options['LinkAmount']);
+		$intOptNum = intval($optNum);
+
+		$newCase  = array();
+		$newLimit = array();
+		for ($i = 0; $i < $intLinks; $i++)
+		{
+			$newLimit[]  = $options['LTM'][$i] ? $options['LTM'][$i] : 0;
+			$newCase[] = $options['Case'][$i] ? $options['Case'][$i] : 0;
+		}
+
+		$options['LTM'] = $newLimit;
+		$options['Case'] = $newCase;	
+				
+		array_splice($options['Match'], $intOptNum, 1);
+		array_splice($options['Query'], $intOptNum, 1);
+		array_splice($options['PerPage'], $intOptNum, 1);
+		array_splice($options['LTM'], $intOptNum, 1);
+		array_splice($options['Case'], $intOptNum, 1);
+		
+		$options['LinkAmount'] = $intLinks - 1;
+
+		update_option('prosper_autoLinker', $options);
+	}	
 	
 	public function prosperAdminCss()
 	{
@@ -57,7 +107,9 @@ class Model_Links_Admin extends Model_Links_Base
 	public function optionsInit() 
 	{
 		register_setting( 'prosperent_options', 'prosperSuite' );
+		register_setting( 'prosperent_linker_options', 'prosper_autoLinker' );		
 		register_setting( 'prosperent_prosper_links_options', 'prosper_prosperLinks' );
+		register_setting( 'prosperent_advanced_options', 'prosper_advanced' );		
 		
 		if ( function_exists( 'is_multisite' ) && is_multisite() ) 
 		{

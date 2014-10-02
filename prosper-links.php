@@ -2,7 +2,7 @@
 /*
 Plugin Name: ProsperLinks
 Description: Contains a link-optimizer and link-affiliator to easily monetize links already in your blog.
-Version: 1.3
+Version: 1.4
 Author: Prosperent Brandon
 Author URI: http://prosperent.com
 Plugin URI: http://community.prosperent.com/forumdisplay.php?35-Wordpress-Plugin-Suite
@@ -43,8 +43,6 @@ if (!defined('PROSPERLINKS_FOLDER'))
     define('PROSPERLINKS_FOLDER', plugin_basename(dirname(__FILE__)));
 if (!defined('PROSPERLINKS_FILE'))
     define('PROSPERLINKS_FILE', basename((__FILE__)));
-if (!defined('PROSPERLINKS_CACHE'))
-	define('PROSPERLINKS_CACHE', WP_CONTENT_DIR . '/prosperent_cache');
 if (!defined('PROSPERLINKS_INCLUDE'))
 	define('PROSPERLINKS_INCLUDE', PROSPERLINKS_PATH . 'includes');
 if (!defined('PROSPERLINKS_MODEL'))

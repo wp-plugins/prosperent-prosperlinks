@@ -35,4 +35,33 @@ class Model_Links_Activate extends Model_Links_Base
 			}
 		}
 	}
+	
+	public function prosperDefaultOptions()
+	{
+		if (!is_array(get_option('prosperSuite')))
+		{
+			$opt = array(
+				'Target' => 1
+			);	
+			update_option('prosperSuite', $opt);
+		}
+
+		if (!is_array(get_option('prosper_autoLinker')))
+		{
+			$opt = array(
+				'Enable_AL' 		 => 1,
+				'Auto_Link_Comments' => 0
+			);			
+			update_option( 'prosper_autoLinker', $opt );
+		}
+		
+		if (!is_array(get_option('prosper_prosperLinks')))
+		{
+			$opt = array(
+				'PL_LinkOpt' => 1,
+				'PL_LinkAff' => 1
+			);			
+			update_option( 'prosper_prosperLinks', $opt );
+		}		
+	}	
 }
